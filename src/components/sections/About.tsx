@@ -1,8 +1,8 @@
 import { Reveal } from "../Reveal";
 
 const stats = [
-  { value: "150+", label: "Projects Completed" },
-  { value: "15", label: "Years of Experience" },
+  { value: "QBCC", label: "Certified Builders" },
+  { value: "2+", label: "Years of Experience" },
   { value: "100%", label: "Client Satisfaction" },
   { value: "40+", label: "Skilled Craftsmen" },
 ];
@@ -18,8 +18,8 @@ export function About() {
               About Us
             </p>
             <h2 className="font-display text-4xl font-medium leading-tight text-navy md:text-5xl">
-              Two decades of building <em className="text-orange not-italic">trust</em>,
-              one project at a time.
+              Building <em className="text-orange not-italic">trust</em>,
+              one project, one step at a time.
             </h2>
           </Reveal>
 
