@@ -9,9 +9,28 @@ export function Contact() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
+    
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const phone = formData.get("phone") as string;
+    const email = formData.get("email") as string;
+    const project = formData.get("project") as string;
+    const message = formData.get("message") as string;
+
+    const subject = encodeURIComponent(`New Quote Request: ${project} - ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\n` +
+      `Phone: ${phone}\n` +
+      `Email: ${email}\n` +
+      `Project Type: ${project}\n\n` +
+      `Message:\n${message}`
+    );
+
+    window.location.href = `mailto:admin@hnmbuilders.com.au?subject=${subject}&body=${body}`;
+
     setTimeout(() => {
       setSubmitting(false);
-      toast.success("Thanks! We'll be in touch within 1 business day.");
+      toast.success("Opening your email client...");
       (e.target as HTMLFormElement).reset();
     }, 800);
   };
@@ -36,9 +55,9 @@ export function Contact() {
 
             <div className="mt-10 space-y-5">
               {[
-                { icon: Phone, label: "Phone", value: "+61 3 9000 1234" },
-                { icon: Mail, label: "Email", value: "hello@hmbuilders.com.au" },
-                { icon: MapPin, label: "Office", value: "Level 3, 240 Queen Street, Melbourne VIC 3000" },
+                { icon: Phone, label: "Phone", value: "+61 0423 523 219" },
+                { icon: Mail, label: "Email", value: "admin@hnmbuilders.com.au" },
+                // { icon: MapPin, label: "Office", value: "Level 3, 240 Queen Street, Melbourne VIC 3000" },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4">
                   <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-navy text-orange">
@@ -54,7 +73,7 @@ export function Contact() {
               ))}
             </div>
 
-            {/* Map */}
+            {/* Map
             <div className="mt-10 overflow-hidden rounded-2xl border border-border shadow-soft">
               <iframe
                 title="H & M Builders office location"
@@ -62,7 +81,7 @@ export function Contact() {
                 className="h-64 w-full"
                 loading="lazy"
               />
-            </div>
+            </div> */}
           </Reveal>
 
           {/* Right — form */}
