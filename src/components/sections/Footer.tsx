@@ -22,8 +22,8 @@ const cols = [
     title: "Contact",
     links: [
       { href: "#contact", label: "Get a Quote" },
-      { href: "tel:+61390001234", label: "+61 3 9000 1234" },
-      { href: "mailto:hello@hmbuilders.com.au", label: "hello@hmbuilders.com.au" },
+      { href: "tel:+610423523219", label: "+61 0423 523 219" },
+      { href: "mailto:admin@hmbuilders.com.au", label: "admin@hmbuilders.com.au" },
     ],
   },
 ];
@@ -47,7 +47,7 @@ export function Footer() {
             <div className="mt-6 inline-flex items-center gap-3">
               <span className="divider-orange" />
               <span className="text-xs uppercase tracking-[0.25em] text-cream/60">
-                ABN 12 345 678 901 · Lic. CDB-U 12345
+                ABN 38 678 144 940 · QBCC Licence 15481893
               </span>
             </div>
           </div>
@@ -72,7 +72,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-cream/10 pt-8 text-xs text-cream/50 md:flex-row">
-          <p>© 2025 H &amp; M Builders Co Pty Ltd. All rights reserved.</p>
+          <p>© 2026 H &amp; M Builders Co Pty Ltd. All rights reserved.</p>
           <p className="font-display italic text-cream/70">Built on craftsmanship. Backed by trust.</p>
         </div>
       </div>
