@@ -11,7 +11,7 @@ const testimonials = [
   {
     quote: "Honest pricing, brilliant communication, and a finished office space that has genuinely transformed how our team works. We couldn't recommend them more highly.",
     name: "Michael Chen",
-    role: "Director, Northbridge Capital",
+    role: "Resident, Northbridge",
     rating: 5,
   },
   {
