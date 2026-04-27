@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, ChevronDown } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal } from "../Reveal";
 
@@ -98,18 +98,21 @@ export function Contact() {
                   <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-navy">
                     Project Type
                   </label>
-                  <select
-                    name="project"
-                    required
-                    className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-orange"
-                  >
-                    <option value="">Select a project type…</option>
-                    <option>Residential Construction</option>
-                    <option>Commercial Build-Out</option>
-                    <option>Renovation / Extension</option>
-                    <option>Interior Fit-Out</option>
-                    <option>Consultation Only</option>
-                  </select>
+                  <div className="relative">
+                    <select
+                      name="project"
+                      required
+                      className="w-full appearance-none rounded-lg border border-input bg-background px-4 py-3 pr-10 text-sm text-navy outline-none transition-colors focus:border-orange"
+                    >
+                      <option value="">Select a project type…</option>
+                      <option>Residential Construction</option>
+                      <option>Commercial Build-Out</option>
+                      <option>Renovation / Extension</option>
+                      <option>Interior Fit-Out</option>
+                      <option>Consultation Only</option>
+                    </select>
+                    <ChevronDown className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-navy/50" size={16} />
+                  </div>
                 </div>
                 <div className="md:col-span-2">
                   <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-navy">
