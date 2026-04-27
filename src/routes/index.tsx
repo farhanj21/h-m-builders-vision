@@ -1,26 +1,51 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "@/components/ui/sonner";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
+import { Services } from "@/components/sections/Services";
+import { WhyUs } from "@/components/sections/WhyUs";
+import { Projects } from "@/components/sections/Projects";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { Contact } from "@/components/sections/Contact";
+import { Footer } from "@/components/sections/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "H & M Builders Co Pty Ltd — Premium Construction & Renovation" },
+      {
+        name: "description",
+        content:
+          "H & M Builders crafts premium residential and commercial spaces across Victoria. 15+ years of experience, 150+ projects, transparent pricing. Get a free quote today.",
+      },
+      { property: "og:title", content: "H & M Builders — Building Dreams, One Foundation at a Time" },
+      {
+        property: "og:description",
+        content:
+          "Premium construction, renovations, and fit-outs from a trusted Australian builder. Licensed, insured, and obsessed with detail.",
+      },
+      { property: "og:type", content: "website" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <WhyUs />
+        <Projects />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster position="top-center" richColors />
+    </>
+  );
 }
