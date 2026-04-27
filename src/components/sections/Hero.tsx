@@ -46,7 +46,7 @@ export function Hero() {
           <div className="mb-8 inline-flex items-center gap-3">
             <span className="divider-orange" />
             <span className="text-xs font-medium uppercase tracking-[0.25em] text-orange">
-              Premium Construction · Est. 2010
+              Premium Construction · Est. 2026
             </span>
           </div>
 
