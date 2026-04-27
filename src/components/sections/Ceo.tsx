@@ -1,5 +1,6 @@
 import { Reveal } from "../Reveal";
 import { Quote } from "lucide-react";
+import ceoImg from "@/assets/ali_ceo.png";
 
 export function Ceo() {
   return (
@@ -10,7 +11,7 @@ export function Ceo() {
           <Reveal>
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl md:aspect-square lg:aspect-[4/5]">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1200&auto=format&fit=crop"
+                src={ceoImg}
                 alt="CEO of H & M Builders"
                 className="h-full w-full object-cover object-top"
               />
@@ -40,14 +41,12 @@ export function Ceo() {
 
             <div className="mt-10 space-y-6 text-base leading-relaxed text-muted-foreground">
               <p>
-                With over two decades of experience in the construction industry, Michael has led H & M Builders from a small local firm to a trusted name across Victoria. His commitment to uncompromising quality, transparency, and innovation is the driving force behind every project we undertake.
+                Ali has led H & M Builders from a small local firm to a trusted name across Victoria. His commitment to uncompromising quality, transparency, and innovation is the driving force behind every project we undertake.
               </p>
               <p>
-                Under his leadership, the company has successfully delivered over 150 projects, ranging from bespoke residential homes to large-scale commercial fit-outs. Michael believes that true success lies in the details—the strength of the materials, the precision of the craftsmanship, and the trust built with every client.
+                Under his leadership, the company has successfully delivered various projects, ranging from bespoke residential homes to large-scale commercial fit-outs. Ali believes that true success lies in the details—the strength of the materials, the precision of the craftsmanship, and the trust built with every client.
               </p>
-              <p>
-                "We don't just see blueprints; we see the future our clients are trying to create. It's our privilege to bring that vision to life with integrity and excellence."
-              </p>
+    
             </div>
           </Reveal>
         </div>
