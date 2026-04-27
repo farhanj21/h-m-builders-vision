@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import faviconUrl from "../assets/logo.png";
 
 function NotFoundComponent() {
   return (
@@ -29,16 +30,21 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "H & M Builders" },
+      { name: "description", content: "Premium Construction & Renovation" },
+      { name: "author", content: "H & M Builders" },
+      { property: "og:title", content: "H & M Builders" },
+      { property: "og:description", content: "Premium Construction & Renovation" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@hmbuilders" },
     ],
     links: [
+      {
+        rel: "icon",
+        href: faviconUrl,
+        type: "image/png",
+      },
       {
         rel: "stylesheet",
         href: appCss,
