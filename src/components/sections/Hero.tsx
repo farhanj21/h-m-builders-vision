@@ -65,14 +65,14 @@ export function Hero() {
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
-              href="#contact"
+              href="/#contact"
               className="group inline-flex items-center gap-3 rounded-full bg-orange px-7 py-4 text-sm font-semibold text-navy transition-all hover:shadow-orange hover:-translate-y-0.5"
             >
               Get a Free Quote
               <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#projects"
+              href="/#projects"
               className="inline-flex items-center gap-3 rounded-full border border-cream/30 bg-cream/5 px-7 py-4 text-sm font-medium text-cream backdrop-blur transition-all hover:border-cream/60 hover:bg-cream/10"
             >
               <Phone size={16} />

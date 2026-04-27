@@ -3,12 +3,13 @@ import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#why", label: "Why Us" },
-  { href: "#projects", label: "Projects" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#why", label: "Why Us" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#testimonials", label: "Testimonials" },
+  { href: "/#ceo", label: "Leadership" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -17,7 +18,7 @@ export function Header() {
   return (
     <header className="fixed top-0 z-50 w-full transition-all duration-300 border-b border-border/60 bg-background/85 backdrop-blur-xl shadow-soft">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <a href="#top" className="shrink-0">
+        <a href="/#top" className="shrink-0">
           <Logo />
         </a>
 
@@ -35,7 +36,7 @@ export function Header() {
         </nav>
 
         <a
-          href="#contact"
+          href="/#contact"
           className="hidden rounded-full bg-navy px-5 py-2.5 text-sm font-medium text-cream transition-all hover:bg-orange hover:text-navy hover:shadow-orange lg:inline-flex"
         >
           Get a Quote
@@ -64,7 +65,7 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="/#contact"
               onClick={() => setOpen(false)}
               className="mt-4 rounded-full bg-navy px-5 py-3 text-center text-sm font-medium text-cream"
             >

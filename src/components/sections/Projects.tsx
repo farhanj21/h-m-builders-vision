@@ -41,7 +41,7 @@ export function Projects() {
           {projects.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.06}>
               <a
-                href="#contact"
+                href="/#contact"
                 className="group block overflow-hidden rounded-2xl bg-card shadow-soft transition-all hover:-translate-y-1 hover:shadow-elevated"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">

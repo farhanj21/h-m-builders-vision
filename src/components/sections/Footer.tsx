@@ -4,24 +4,24 @@ const cols = [
   {
     title: "Company",
     links: [
-      { href: "#about", label: "About Us" },
-      { href: "#projects", label: "Projects" },
-      { href: "#testimonials", label: "Testimonials" },
+      { href: "/#about", label: "About Us" },
+      { href: "/#projects", label: "Projects" },
+      { href: "/#testimonials", label: "Testimonials" },
     ],
   },
   {
     title: "Services",
     links: [
-      { href: "#services", label: "Residential" },
-      { href: "#services", label: "Commercial" },
-      { href: "#services", label: "Renovations" },
-      { href: "#services", label: "Fit-Outs" },
+      { href: "/#services", label: "Residential" },
+      { href: "/#services", label: "Commercial" },
+      { href: "/#services", label: "Renovations" },
+      { href: "/#services", label: "Fit-Outs" },
     ],
   },
   {
     title: "Contact",
     links: [
-      { href: "#contact", label: "Get a Quote" },
+      { href: "/#contact", label: "Get a Quote" },
       { href: "tel:+610423523219", label: "+61 0423 523 219" },
       { href: "mailto:admin@hmbuilders.com.au", label: "admin@hmbuilders.com.au" },
     ],
