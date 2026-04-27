@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 
@@ -12,24 +12,10 @@ const links = [
 ];
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "border-b border-border/60 bg-background/85 backdrop-blur-xl shadow-soft"
-          : "bg-transparent"
-      }`}
-    >
+    <header className="fixed top-0 z-50 w-full transition-all duration-300 border-b border-border/60 bg-background/85 backdrop-blur-xl shadow-soft">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <a href="#top" className="shrink-0">
           <Logo />
