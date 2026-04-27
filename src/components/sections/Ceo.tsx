@@ -3,7 +3,7 @@ import { Quote } from "lucide-react";
 
 export function Ceo() {
   return (
-    <section id="ceo" className="relative bg-background py-24 lg:py-32 overflow-hidden">
+    <section id="ceo" className="relative bg-secondary py-24 lg:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
           {/* Left Image */}
@@ -25,7 +25,7 @@ export function Ceo() {
               Leadership
             </p>
             <h2 className="font-display text-4xl font-medium leading-tight text-navy md:text-5xl">
-              Michael Reynolds
+              Ali Farhan
             </h2>
             <p className="mt-2 text-lg font-medium text-navy/70">
               Founder & Chief Executive Officer

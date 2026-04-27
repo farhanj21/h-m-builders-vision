@@ -42,7 +42,6 @@ function Index() {
         <Services />
         <WhyUs />
         <Projects />
-        <Testimonials />
         <Ceo />
         <Contact />
       </main>
