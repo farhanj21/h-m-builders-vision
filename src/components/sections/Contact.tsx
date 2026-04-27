@@ -91,9 +91,9 @@ export function Contact() {
               className="rounded-2xl border border-border bg-card p-8 shadow-soft md:p-10"
             >
               <div className="grid gap-5 md:grid-cols-2">
-                <Field label="Full Name" name="name" required />
-                <Field label="Phone" name="phone" type="tel" required />
-                <Field label="Email" name="email" type="email" required className="md:col-span-2" />
+                <Field label="Full Name" name="name" placeholder="Enter your full name" required />
+                <Field label="Phone" name="phone" type="tel" placeholder="Enter your phone number" required />
+                <Field label="Email" name="email" type="email" placeholder="Enter your email address" required className="md:col-span-2" />
                 <div className="md:col-span-2">
                   <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-navy">
                     Project Type
@@ -123,7 +123,7 @@ export function Contact() {
                     rows={5}
                     required
                     placeholder="Tell us about your vision, timeline, and budget…"
-                    className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-orange"
+                    className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-orange placeholder:text-muted-foreground/50"
                   />
                 </div>
               </div>
@@ -153,12 +153,14 @@ function Field({
   type = "text",
   required,
   className = "",
+  placeholder,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
   className?: string;
+  placeholder?: string;
 }) {
   return (
     <div className={className}>
@@ -169,7 +171,8 @@ function Field({
         name={name}
         type={type}
         required={required}
-        className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-orange"
+        placeholder={placeholder}
+        className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-orange placeholder:text-muted-foreground/50"
       />
     </div>
   );
